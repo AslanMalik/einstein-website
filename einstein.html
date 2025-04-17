@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student project exploring Albert Einstein's life, contributions, and legacy.">
+  <meta name="keywords" content="Albert Einstein, physics, relativity, biography, science">
+  <meta name="author" content="Your Name">
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="Albert Einstein – Genius of the Universe">
+  <meta property="og:description" content="A student project about Albert Einstein's life and contributions.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg">
+  <meta property="og:url" content="https://your-site.com/einstein">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Preload critical assets -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <title>Albert Einstein – Genius of the Universe</title>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Albert Einstein – Genius of the Universe",
+    "description": "A student project exploring Albert Einstein's life, contributions, and legacy.",
+    "author": {
+      "@type": "Person",
+      "name": "Your Name"
+    },
+    "about": {
+      "@type": "Person",
+      "name": "Albert Einstein",
+      "birthDate": "1879-03-14",
+      "deathDate": "1955-04-18",
+      "nationality": "German"
+    }
+  }
+  </script>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a href="#bio">Biography</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#quotes">Quotes</a>
+    <a href="#video">Video</a>
+  </nav>
+
+  <header id="main-header">
+    <h1>Albert Einstein – Genius of the Universe</h1>
+    <p> Project | April 2025</p>
+    <button type="button" id="theme-toggle" aria-label="Toggle theme">🌓 Toggle Theme</button>
+  </header>
+
+  <main>
+    <section id="bio">
+      <h2>🧠 Biography</h2>
+      <p>Albert Einstein was born on March 14, 1879, in Ulm, Germany. From a young age, he showed a deep interest in mathematics and physics. He studied in Zurich and worked at a patent office, where he developed key theories. He passed away in Princeton, USA, on April 18, 1955.</p>
+    </section>
+
+    <section id="timeline">
+      <h2>📅 Timeline</h2>
+      <ul>
+        <li><strong>1879</strong> – Born in Ulm, Germany</li>
+        <li><strong>1905</strong> – Publishes four revolutionary scientific papers</li>
+        <li><strong>1915</strong> – General Theory of Relativity</li>
+        <li><strong>1921</strong> – Nobel Prize in Physics</li>
+        <li><strong>1933</strong> – Escapes Nazi Germany to the USA</li>
+        <li><strong>1955</strong> – Passes away in Princeton</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💬 Personal Reflection</h2>
+      <blockquote cite="https://www.example.com/einstein-reflection">
+        I chose Einstein because he inspires me to think differently, not be afraid to stand out, and always keep learning. His life shows how science can truly change the world.
+      </blockquote>
+    </section>
+
+    <section id="gallery">
+      <h2>📷 Photo Gallery</h2>
+      <div class="image-container" role="region" aria-label="Photo gallery">
+        <figure>
+          <picture>
+            <source srcset="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" type="image/webp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Portrait of Albert Einstein" loading="lazy" class="gallery-img">
+          </picture>
+          <figcaption>Albert Einstein, circa 1920</figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/440px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" type="image/webp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/440px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" alt="Albert Einstein in 1921" loading="lazy" class="gallery-img">
+          </picture>
+          <figcaption>Einstein in 1921, by F. Schmutzer</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-live="polite">
+      <h2>🔍 Fun Facts</h2>
+      <button type="button" id="fact-toggle">Did you know?</button>
+      <div id="fact" class="hidden">
+        <p>Einstein was offered the presidency of Israel in 1952, but he declined.</p>
+      </div>
+      <button type="button" id="emc2-button">What does E=mc² mean?</button>
+      <div id="emc2-explanation" class="hidden">
+        <p>E = mc² means Energy equals mass times the speed of light squared, demonstrating the equivalence of mass and energy.</p>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <h2>🧠 Famous Quotes</h2>
+      <blockquote cite="https://www.example.com/einstein-quotes">"Imagination is more important than knowledge."</blockquote>
+      <blockquote cite="https://www.example.com/einstein-quotes">"The important thing is not to stop questioning."</blockquote>
+      <blockquote cite="https://www.example.com/einstein-quotes">"Life is like riding a bicycle. To keep your balance, you must keep moving."</blockquote>
+    </section>
+
+    <section id="video" class="video-container">
+      <h2>🎬 Video</h2>
+      <iframe src="https://www.youtube.com/embed/O4KEdrF2U2I" title="Documentary about Albert Einstein" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <section id="references">
+      <h2>📚 References</h2>
+      <ul>
+        <li>Isaacson, Walter. <em>Einstein: His Life and Universe</em>. Simon & Schuster, 2007.</li>
+        <li><a href="https://www.biography.com/scientist/albert-einstein" target="_blank" rel="noopener">Biography.com – Albert Einstein</a></li>
+        <li><a href="https://www.nasa.gov/einstein" target="_blank" rel="noopener">NASA – Einstein and the Universe</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created with 💙 and curiosity | Your Name, 2025</p>
+  </footer>
+
+  <button type="button" id="back-to-top" aria-label="Back to top" class="hidden">⬆</button>
+
+  <div id="lightbox" class="hidden">
+    <span id="lightbox-close" role="button" aria-label="Close lightbox">×</span>
+    <img id="lightbox-img" src="" alt="Enlarged image">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

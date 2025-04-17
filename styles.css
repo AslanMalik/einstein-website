@@ -1,0 +1,165 @@
+/* CSS Variables for theming */
+:root {
+    --bg-color: #0c0c1c;
+    --text-color: #f0f0f0;
+    --accent-color: #00d4ff;
+    --nav-bg: #111;
+    --section-bg: rgba(255, 255, 255, 0.05);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-shadow: rgba(0, 255, 255, 0.3);
+  }
+  
+  .light-theme {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --section-bg: rgba(0, 0, 0, 0.05);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Global styles */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat, var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 4rem 0 0;
+    transition: background 0.5s, color 0.5s;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--nav-bg);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  nav a:hover, nav a:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--accent-color);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.625rem var(--shadow-color);
+  }
+  
+  main {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  section {
+    background: var(--section-bg);
+    margin: 1.25rem 0;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 1.25rem var(--hover-shadow);
+  }
+  
+  h1, h2 {
+    color: var(--accent-color);
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  blockquote {
+    font-style: italic;
+    border-left: 0.25rem solid var(--accent-color);
+    padding-left: 1rem;
+    margin: 0.625rem 0;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem var(--shadow-color);
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    max-width: 50rem;
+    height: 22.5rem;
+    border-radius: 0.625rem;
+  }
+  
+  button {
+    padding: 0.625rem 1rem;
+    background: var(--accent-color);
+    color: #000;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  button:hover, button:focus {
+    background: #00aabb;
+    outline: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1.25rem;
+    color: #888;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    nav a {
+      margin: 0.5rem;
+    }
+  
+    .video-container iframe {
+      height: 15rem;
+    }
+  }
